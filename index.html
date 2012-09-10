@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8" />
+		<title> SJCO - About </title>
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<header>
+				<h1><a href="index.html"><img src="images/header.png"/></a><img id="director" src="images/director.png">
+				<p id="directorDescription">
+					Barbara Day Turner<br>
+					<i>Music Director</i>
+				</p></h1>
+			</header>
+
+			<div id="navBox">
+				<ul id="nav">
+					<li id="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="season.html">2012-2013</a></li>
+					<li><a href="events.html">Events</a></li>
+					<li><a href="tickets.html">Tickets</a></li>
+					<li><a href="youth.html">Youth</a></li>
+					<li><a href="donate.html">Donate</a></li>
+					<li><a href="recordings.html">Recordings</a></li>
+					<li><a href="other.html">Other Notes</a></li>
+					<li><a href="staff.html">Staff</a></li>
+				</ul>
+			</div>
+
+			<div id="indexContent" class="content">
+				<ul id="material">
+					<li id="item1">
+						<a href="about.html" class="picture"> <img id="strings" src="images/strings.png" width="150" height="150" alt="Strings" /> </a>
+					</li>
+
+					<li id="item2">
+						<a href="recordings.html" class="picture"> <img id="cd" src="images/chooselife.jpg" width="150" height="150" alt="Recordings" /> </a>
+					</li>
+
+					<li id="item3">
+						<a href="staff.html" class="picture"> <img id="staff" src="images/2.jpg" width="150" height="150" alt="Staff" /> </a>
+					</li>
+
+					<li id="item4">
+						<a href="other.html" class="picture"> <img id="other" src="images/1.jpg" width="150" height="150" alt="Other" /> </a>
+					</li>
+				</ul>
+
+				<div id="text">
+					<p id="text1" class="index_text-box" style="display:none;">
+						The San José Chamber Orchestra is a twenty-member professional string orchestra, founded in 1991. Conductor Barbara Day Turner is the founder and music director of the San José Chamber Orchestra. Click to learn more!
+					</p>
+
+					<p id="text2" class="index_text-box" style="display:none;">
+						Our newest release, Choose Life, plus old favorites like Mikey, by Michael Touchi, whose Tango Barocco will be featured in our special event with sjDANCEco, can now be purchased from our online site. We also have a limited edition section featuring previous guest artists like Jon Nakamatsu and Ann Licater. There are not many of these left, so get them before we run out. The $17.00 purchase price includes tax and shipping. Click to learn more!
+					</p>
+
+					<p id="text3" class="index_text-box" style="display:none;">
+						Samuel Thompson is a Baltimore-based violinist and graduate of Rice University’s Shepherd School of Music. He has contributed to Strings Magazine, Nigel Kennedy Online & violinist.com.
+					</p>
+
+					<p id="text4" class="index_text-box" style="display:none;">
+						This column by writer/violinist Samuel Thompson showcases items of interest to SJCO and our fans. Keep checking for new columns to be added regularly. If you missed a column, there are links to previous columns on the Other Notes page. Click to learn more!
+					</p>
+				</div>
+			</div>
+         
+			<footer>
+				<p>
+					San José Chamber Orchestra | 1034 Bennett Way, San José, CA 95125 | Phone: 408-295-4416 | <a href="mailto:sjco@sbcglobal.net">sjco@sbcglobal.net <br>
+					The San José Chamber Orchestra is funded in part by grants from the City of San José, Office of Cultural Affairs and the Arts Council Silicon Valley in partnership with the County of Santa Clara and the California Arts Council. <br>
+					Copyright &copy; 2005-2010 San José Chamber Orchestra. All rights reserved.
+				</p>
+			</footer>
+		</div>
+        
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$("#strings").mouseenter(function() {
+		$("#text1").fadeIn("fast");
+	});
+
+	$("#strings").mouseout(function() {
+		$("#text1").hide();
+	});
+
+	$("#cd").mouseenter(function() {
+		$("#text2").fadeIn("fast");
+	});
+
+	$("#cd").mouseout(function() {
+		$("#text2").hide();
+	});
+
+	$("#staff").mouseenter(function() {
+		$("#text3").fadeIn("fast");
+	});
+
+	$("#staff").mouseout(function() {
+		$("#text3").hide();
+	});
+
+	$("#other").mouseenter(function() {
+		$("#text4").fadeIn("fast");
+	});
+
+	$("#other").mouseout(function() {
+		$("#text4").hide();
+	});
+
+});
+
+</script>
+
+	</body>
+</html>

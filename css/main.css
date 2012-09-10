@@ -1,0 +1,278 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #fff url(../images/orchestraback.jpg) repeat-x;
+}
+
+body {
+	font: 62.5%/1.5 Arial, Hevetica, sans-sarif;
+}
+
+header {
+	height: 150px;
+	display: block;
+	background-color: black;
+}
+
+#wrapper {
+	background-color: #CCC;
+	margin: 0 auto;
+	width: 960px;
+	opacity: 0.98;
+	
+}
+
+footer {
+	background-color: #000;
+}
+
+footer p {
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px 0;
+	color: #fff;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.content {
+	padding: 10px 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
+	background: -moz-linear-gradient(top,  #000,  #ccc);
+}
+
+header h1 {
+	color: #FFF;
+	margin: 10px 0 0 10px;
+}
+
+header h1 a:hover {
+	color: blue;
+}
+
+#navBox {
+	display: block;
+	background-color: #000;
+	height: 36px;
+}
+
+#nav {
+
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: center;
+}
+
+#nav li {
+	float: left;
+	display: inline;
+	font-size: 2em;
+}
+
+#nav li a {
+	padding: 10px;
+	margin-left: 6px;
+	color: white;
+	border-radius: 35px;
+	transition: background-color 0.1s, box-shadow 0.25s;
+	-moz-transition: background-color 0.1s, box-shadow 0.25s; /* Firefox 4 */
+	-webkit-transition: background-color 0.1s, box-shadow 0.5s; /* Safari and Chrome */
+	-o-transition: background-color 0.1s, box-shadow 0.25s; /* Opera */
+}
+
+#nav li a:hover {
+	background-color: #005ba5;
+	color: white;
+	text-decoration: none;
+	border-radius: 35px;
+	/*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+
+}
+
+#nav #active a {
+	background-color: #005ba5;
+	color: white;
+	text-decoration: none;
+	border-radius: 35px;
+}
+
+#director {
+	float: right;
+	height: 144px;
+}
+
+#directorDescription {
+	float: right;
+	text-align: right;
+	padding: 5px 10px 0 0;
+	font: 62.5%/1.5 Arial, Hevetica, sans-sarif;
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+#text {
+	float: left;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#wrapper2 {
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
+	background: -moz-linear-gradient(top,  #000,  #ccc);
+}
+
+#staff {
+	list-style-type: none;	
+	display: inline;
+
+}
+
+.picture {
+	float: left;
+	margin: 20px;
+	opacity: 0.8;
+	border: 10px solid #eee;
+ 
+	/*Transition*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	
+}
+ 
+.picture:hover {
+    margin-top: 2px;
+	opacity: 1;
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+}
+
+.staffPicture:hover {
+	
+	/*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  
+  /*Transition*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+  
+}
+
+#material {
+	list-style-type: none;	
+	padding: 0px 40px;
+}
+
+#indexContent {
+	height: 500px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
+	background: -moz-linear-gradient(top,  #000,  #ccc);
+}
+
+/* HOME */
+
+.index_text-box
+{
+	background-color: rgba(220,220,255,0.8);
+	padding: 5px;
+	box-shadow: 0px 0px 8px 3px  #000;
+	text-align: justify;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px white;
+}
+
+/* ABOUT */
+#about_heading
+{
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 1px blue;
+}
+#about_season-info
+{
+	border: 2px solid #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#005BA5), to(#000));
+	background: -moz-linear-gradient(top,  #005BA5,  #000);
+}
+#about_season-info p
+{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0px 1px 0px white;
+}
+
+#about_season-info a
+{
+	color: #005BA5;
+	font-weight: bold;
+}
+
+#about_season-title
+{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#about_season-info a:hover
+{
+	color: #FFF;
+}
+
+/* SEASON */
+#season_content
+{
+	text-align: center;
+}
+
+.season_event
+{
+	border-bottom: 1px solid white;
+	background-color: #005BA5;
+}
+
+.season_event-date
+{
+	font-size: 35px;
+	color: white;
+}
+
+.season_event-title
+{
+	font-size: 30px;
+	color: green;
+}
+
+.season_event-description
+{
+	font-size: 20px;
+}
+
+/* EVENTS */
+#events_content
+{
+	background-image: url(../images/events.png);
+	height: 843px;
+	width: 712px;
+	margin: 25px;
+	left: 105px;
+	position: relative;
+}
