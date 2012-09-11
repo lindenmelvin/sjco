@@ -246,19 +246,19 @@ header h1 a:hover {
 .season_event
 {
 	border-bottom: 1px solid white;
-	background-color: #005BA5;
+	background-color: silver;
 }
 
 .season_event-date
 {
 	font-size: 35px;
-	color: white;
+	color: #1284BA;
 }
 
 .season_event-title
 {
 	font-size: 30px;
-	color: green;
+	color: #fff;
 }
 
 .season_event-description
@@ -275,4 +275,108 @@ header h1 a:hover {
 	margin: 25px;
 	left: 105px;
 	position: relative;
+}
+
+/* TICKETS */
+#tickets_heading
+{
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+#tickets_subscriber-info
+{
+	font-size: 17px;
+	width: 90%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 4px;
+	background-color: silver;
+	text-align: center;
+}
+#tickets_subscriber-info ul
+{
+	list-style-type: none;
+}
+.zebra-even
+{
+	background-color: #333;
+	color: silver;
+}
+#tickets_info
+{
+	text-align: center;
+	font-size: 14px;
+}
+
+/* YOUTH */
+
+#youth_title
+{
+	text-align: center;
+	color: #1284BA;
+	font-size: 34px;
+	border: 1px solid #777;
+	background-color: #222;
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+#youth_content
+{
+	border: 2px solid #555;
+	border-radius: 5px;
+	width: 100%;
+	background: silver;
+	text-align: justify;
+	font-size: 20px;
+
+}
+
+/* DONATE */
+#donate_title
+{
+	text-align: center;
+	color: #1284BA;
+	font-size: 34px;
+	border: 1px solid #777;
+	background-color: #222;
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+/* STAFF */
+.staff_member
+{
+	border: 2px solid #555;
+	border-radius: 5px;
+	width: 100%;
+	background: silver;
+}
+
+.staff_member-title
+{
+	text-align: center;
+	color: #1284BA;
+	font-size: 25px;
+}
+
+.staff_member-bio
+{
+	text-align: left;
+	font-size: 20px;
+}
+
+.staff_member-picture
+{
+	height: 137px;
+	width: 140px;
+	margin-left:auto;
+	margin-right: auto;
 }
