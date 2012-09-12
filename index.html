@@ -35,23 +35,24 @@
 			<div id="indexContent" class="content">
 				<ul id="material">
 					<li id="item1">
-						<a href="about.html" class="picture"> <img id="strings" src="images/strings.png" width="150" height="150" alt="Strings" /> </a>
+						<a href="about.html" class="hover-highlight"> S </a>
 					</li>
 
 					<li id="item2">
-						<a href="recordings.html" class="picture"> <img id="cd" src="images/chooselife.jpg" width="150" height="150" alt="Recordings" /> </a>
+						<a href="recordings.html" class="hover-highlight"> J </a>
 					</li>
 
 					<li id="item3">
-						<a href="staff.html" class="picture"> <img id="staff" src="images/2.jpg" width="150" height="150" alt="Staff" /> </a>
+						<a href="staff.html" class="hover-highlight"> C </a>
 					</li>
 
 					<li id="item4">
-						<a href="other.html" class="picture"> <img id="other" src="images/1.jpg" width="150" height="150" alt="Other" /> </a>
+						<a href="other.html" class="hover-highlight"> O </a>
 					</li>
 				</ul>
 
 				<div id="text">
+
 					<p id="text1" class="index_text-box" style="display:none;">
 						The San José Chamber Orchestra is a twenty-member professional string orchestra, founded in 1991. Conductor Barbara Day Turner is the founder and music director of the San José Chamber Orchestra. Click to learn more!
 					</p>
@@ -82,35 +83,39 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-	$("#strings").mouseenter(function() {
+	$("#item1").mouseenter(function() {
+		$("#text0").hide();
 		$("#text1").fadeIn("fast");
 	});
 
-	$("#strings").mouseout(function() {
+	$("#item1").mouseout(function() {
 		$("#text1").hide();
 	});
 
-	$("#cd").mouseenter(function() {
+	$("#item2").mouseenter(function() {
+		$("#text0").hide();
 		$("#text2").fadeIn("fast");
 	});
 
-	$("#cd").mouseout(function() {
+	$("#item2").mouseout(function() {
 		$("#text2").hide();
 	});
 
-	$("#staff").mouseenter(function() {
+	$("#item3").mouseenter(function() {
+		$("#text0").hide();
 		$("#text3").fadeIn("fast");
 	});
 
-	$("#staff").mouseout(function() {
+	$("#item3").mouseout(function() {
 		$("#text3").hide();
 	});
 
-	$("#other").mouseenter(function() {
+	$("#item4").mouseenter(function() {
+		$("#text0").hide();
 		$("#text4").fadeIn("fast");
 	});
 
-	$("#other").mouseout(function() {
+	$("#item4").mouseout(function() {
 		$("#text4").hide();
 	});
 

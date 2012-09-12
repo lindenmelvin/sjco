@@ -42,9 +42,10 @@ a {
 }
 
 .content {
-	padding: 10px 0;
-	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
-	background: -moz-linear-gradient(top,  #000,  #ccc);
+	/*background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
+		background: -moz-linear-gradient(top,  #000,  #ccc);*/
+	background-color: #3F536A;
+	position: relative;
 }
 
 header h1 {
@@ -137,11 +138,18 @@ header h1 a:hover {
 
 }
 
-.picture {
+.hover-highlight {
 	float: left;
 	margin: 20px;
 	opacity: 0.8;
-	border: 10px solid #eee;
+	border: 10px solid #fff;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	color: #005BA5;
  
 	/*Transition*/
 	-webkit-transition: all 0.5s ease;
@@ -150,14 +158,14 @@ header h1 a:hover {
 	
 }
  
-.picture:hover {
-    margin-top: 2px;
+.hover-highlight:hover {
+	margin-top: 2px;
 	opacity: 1;
- 
-   /*Glow*/
-  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
-  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
-  box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+
+	/*Glow*/
+	-webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+	-moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
+	box-shadow: 0px 0px 20px rgba(255,255,255,0.9);
 }
 
 .staffPicture:hover {
@@ -181,8 +189,6 @@ header h1 a:hover {
 
 #indexContent {
 	height: 500px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
-	background: -moz-linear-gradient(top,  #000,  #ccc);
 }
 
 /* HOME */
@@ -195,6 +201,7 @@ header h1 a:hover {
 	text-align: justify;
 	font-size: 20px;
 	text-shadow: 1px 1px 1px white;
+	width: 100%;
 }
 
 /* ABOUT */
@@ -352,6 +359,36 @@ header h1 a:hover {
 }
 
 /* STAFF */
+
+#staff_title
+{
+	color:white;
+	background-color: #000;
+	text-align: center;
+	font-size: 34px;
+}
+.staff_name-link
+{
+	position: relative;
+	border: 1px solid white;
+	background-color: silver;
+	font-size: 20px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+}
+
+.staff_name-link:hover
+{
+	background-color: #1284BA;
+	color: #FFF;
+}
+
+#staff_name-link-container
+{
+	position: relative;
+}
 .staff_member
 {
 	border: 2px solid #555;
@@ -369,8 +406,9 @@ header h1 a:hover {
 
 .staff_member-bio
 {
-	text-align: left;
+	text-align: justify;
 	font-size: 20px;
+	padding: 10px;
 }
 
 .staff_member-picture
