@@ -10,7 +10,7 @@
 		<div id="wrapper">
 
 			<header>
-				<h1><a href="index.html"><img src="images/header.png"/></a><img id="director" src="images/director.png">
+				<h1 id="header-image"><a href="index.html"><img src="images/header.png"/></a><img id="director" src="images/director.png">
 				<p id="directorDescription">
 					Barbara Day Turner<br>
 					<i>Music Director</i>
@@ -49,6 +49,8 @@
 					<li id="item4">
 						<a href="other.html" class="hover-highlight"> O </a>
 					</li>
+					
+					<li id="item5"><img style="width:100%" src="images/header.png"/></li>
 				</ul>
 
 				<div id="text">
@@ -73,7 +75,7 @@
          
 			<footer>
 				<p>
-					San José Chamber Orchestra | 1034 Bennett Way, San José, CA 95125 | Phone: 408-295-4416 | <a href="mailto:sjco@sbcglobal.net">sjco@sbcglobal.net <br>
+					San José Chamber Orchestra | 1034 Bennett Way, San José, CA 95125 | Phone: 408-295-4416 | <a href="mailto:sjco@sbcglobal.net">sjco@sbcglobal.net</a><br>
 					The San José Chamber Orchestra is funded in part by grants from the City of San José, Office of Cultural Affairs and the Arts Council Silicon Valley in partnership with the County of Santa Clara and the California Arts Council. <br>
 					Copyright &copy; 2005-2010 San José Chamber Orchestra. All rights reserved.
 				</p>
@@ -83,42 +85,68 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-	$("#item1").mouseenter(function() {
-		$("#text0").hide();
-		$("#text1").fadeIn("fast");
+$("#header-image").hide();
+$("#director").hide();
+$("#directorDescription").hide();
+$("#item1").hide();
+$("#item2").hide();
+$("#item3").hide();
+$("#item4").hide();
+$("#item5").hide();
+
+	$("#item1").fadeIn('slow', function () {
+		$("#item2").fadeIn('slow', function () {
+			$("#item3").fadeIn('slow', function() {
+				$("#item4").fadeIn('slow', function() {
+					$("#item5").fadeIn('slow');
+					$("#header-image").fadeIn('slow');
+					$("#director").fadeIn('slow');
+					$("#directorDescription").fadeIn('slow');
+				});
+			});
+		});
 	});
 
-	$("#item1").mouseout(function() {
-		$("#text1").hide();
-	});
+});
 
-	$("#item2").mouseenter(function() {
-		$("#text0").hide();
-		$("#text2").fadeIn("fast");
-	});
+$("#item1").mouseenter(function() {
+	$("#text0").hide();
+	$("#item5").hide();
+	$("#text1").fadeIn("fast");
+});
 
-	$("#item2").mouseout(function() {
-		$("#text2").hide();
-	});
+$("#item1").mouseout(function() {
+	$("#text1").hide();
+});
 
-	$("#item3").mouseenter(function() {
-		$("#text0").hide();
-		$("#text3").fadeIn("fast");
-	});
+$("#item2").mouseenter(function() {
+	$("#text0").hide();
+	$("#item5").hide();
+	$("#text2").fadeIn("fast");
+});
 
-	$("#item3").mouseout(function() {
-		$("#text3").hide();
-	});
+$("#item2").mouseout(function() {
+	$("#text2").hide();
+});
 
-	$("#item4").mouseenter(function() {
-		$("#text0").hide();
-		$("#text4").fadeIn("fast");
-	});
+$("#item3").mouseenter(function() {
+	$("#text0").hide();
+	$("#item5").hide();
+	$("#text3").fadeIn("fast");
+});
 
-	$("#item4").mouseout(function() {
-		$("#text4").hide();
-	});
+$("#item3").mouseout(function() {
+	$("#text3").hide();
+});
 
+$("#item4").mouseenter(function() {
+	$("#text0").hide();
+	$("#item5").hide();
+	$("#text4").fadeIn("fast");
+});
+
+$("#item4").mouseout(function() {
+	$("#text4").hide();
 });
 
 </script>

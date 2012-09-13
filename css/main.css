@@ -37,20 +37,19 @@ footer p {
 }
 
 a {
-	color: #FFF;
+	color: #1284BA;
 	text-decoration: none;
 }
 
 .content {
 	/*background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#ccc));
 		background: -moz-linear-gradient(top,  #000,  #ccc);*/
-	background-color: #3F536A;
+	background-color: #FFF;
 	position: relative;
 }
 
 header h1 {
 	color: #FFF;
-	margin: 10px 0 0 10px;
 }
 
 header h1 a:hover {
@@ -204,27 +203,24 @@ header h1 a:hover {
 	width: 100%;
 }
 
-/* ABOUT */
-#about_heading
+.page-title
 {
-	font-size: 35px;
-	font-weight: bold;
-	color: white;
+	background-color: black;
+	padding: 8px 0;
+	box-shadow: inset 0px 0px 10px 2px white;
 	text-align: center;
-	text-shadow: 1px 1px 1px blue;
+	font-size: 30px;
+	text-shadow: 2px 2px 5px #005BA5;
+	width: 100%;
+	color: white;
+	font-weight: bold;
 }
-#about_season-info
-{
-	border: 2px solid #FFF;
-	background: -webkit-gradient(linear, left top, left bottom, from(#005BA5), to(#000));
-	background: -moz-linear-gradient(top,  #005BA5,  #000);
-}
+/* ABOUT */
 #about_season-info p
 {
-	color: white;
+	color: #000;
 	font-size: 20px;
 	text-align: center;
-	text-shadow: 0px 1px 0px white;
 }
 
 #about_season-info a
@@ -233,15 +229,15 @@ header h1 a:hover {
 	font-weight: bold;
 }
 
-#about_season-title
+#about_choose-life
 {
-	font-weight: bold;
-	font-size: 30px;
+	font-size:20px;
+	padding:8px;
 }
 
-#about_season-info a:hover
+#about_thank-you
 {
-	color: #FFF;
+	font-size: 20px;
 }
 
 /* SEASON */
@@ -256,16 +252,22 @@ header h1 a:hover {
 	background-color: silver;
 }
 
-.season_event-date
+.season_event-link
 {
-	font-size: 35px;
-	color: #1284BA;
+	position: relative;
+	border: 1px solid white;
+	background-color: silver;
+	font-size: 20px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
 }
 
-.season_event-title
+.season_event-link:hover
 {
-	font-size: 30px;
-	color: #fff;
+	background-color: #1284BA;
+	color: #FFF;
 }
 
 .season_event-description
@@ -298,7 +300,9 @@ header h1 a:hover {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #000;
 	border-radius: 4px;
 	background-color: silver;
 	text-align: center;
@@ -318,20 +322,13 @@ header h1 a:hover {
 	font-size: 14px;
 }
 
-/* YOUTH */
-
-#youth_title
+#tickets_single-tickets
 {
+	font-size: 25px;
 	text-align: center;
-	color: #1284BA;
-	font-size: 34px;
-	border: 1px solid #777;
-	background-color: #222;
-	width: 35%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 25px;
 }
+
+/* YOUTH */
 
 #youth_content
 {
@@ -345,28 +342,20 @@ header h1 a:hover {
 }
 
 /* DONATE */
-#donate_title
+#donate_info
 {
-	text-align: center;
-	color: #1284BA;
-	font-size: 34px;
-	border: 1px solid #777;
-	background-color: #222;
-	width: 35%;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 25px;
+	font-size: 20px;
+	text-align: justify;
+	padding: 8px;
 }
 
+#donate_links
+{
+	font-size: 25px;
+	padding: 8px;
+	text-align: center;
+}
 /* STAFF */
-
-#staff_title
-{
-	color:white;
-	background-color: #000;
-	text-align: center;
-	font-size: 34px;
-}
 .staff_name-link
 {
 	position: relative;
@@ -417,4 +406,42 @@ header h1 a:hover {
 	width: 140px;
 	margin-left:auto;
 	margin-right: auto;
+}
+
+/* OTHER */
+#other_content
+{
+	padding: 20px;
+	text-align: justify;
+	font-size: 15px;
+}
+
+.other_note-link
+{
+	position: relative;
+	border: 1px solid white;
+	background-color: silver;
+	font-size: 20px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+}
+
+.other_note-link:hover
+{
+	background-color: #1284BA;
+	color: #FFF;
+}
+
+#other_dave-clementson-description
+{
+	padding:20px;
+	font-size:15px;
+}
+
+#other_newsletter-content
+{
+	font-size:20px;
+	padding:15px;
 }
