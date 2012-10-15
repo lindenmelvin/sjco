@@ -312,11 +312,31 @@ header h1 a:hover {
 {
 	font-size:20px;
 	padding:8px;
+	text-align:justify;
 }
 
 #about_thank-you
 {
 	font-size: 20px;
+}
+
+#about_ibm-thank-you
+{
+	float:left;
+	font-size:25px;
+	text-align:center;
+}
+
+#about_outreach-council-thank-you
+{
+	float:right;
+	font-size:25px;
+	text-align:center;
+}
+
+#about_smule-thank-you
+{
+	clear:both;
 }
 
 /* SEASON */
@@ -409,13 +429,12 @@ header h1 a:hover {
 #tickets_info
 {
 	text-align: center;
-	font-size: 14px;
+	font-size: 30px;
 }
 
-#tickets_single-tickets
+#tickets_button
 {
-	font-size: 25px;
-	text-align: center;
+	width:250px;
 }
 
 /* YOUTH */
@@ -477,7 +496,8 @@ header h1 a:hover {
 }
 .staff_member
 {
-	width: 100%;
+	border:1px solid #000;
+	margin-top:-1px;
 }
 
 .staff_member-title
@@ -635,4 +655,9 @@ header h1 a:hover {
 	bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#recordings_choose-life
+{
+	height:160px;
 }
