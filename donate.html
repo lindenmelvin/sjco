@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> SJCO </title>
-		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="main.css" rel="stylesheet" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"> </script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
-				<h1><a href="index.html"><img src="images/header.png"/></a> <img id="director" src="images/director.png"> <p id="directorDescription"> Barbara Day Turner,<br>Music Director</p> </h1>
+				<h1><a href="index.html"><img src="images/header.png"/></a> <img id="director" src="images/director.png"> <p id="header_director-description"> Barbara Day Turner,<br>Music Director</p> </h1>
 			</header>
 
 			<div id="navBox">
@@ -20,7 +20,7 @@
 					<li> <a href="events.html">Events</a></li>
 					<li> <a href="tickets.html">Tickets</a></li>
 					<li> <a href="youth.html">Youth</a></li>
-					<li id="active"> <a href="#">Donate</a></li>
+					<li class="active"> <a href="#">Donate</a></li>
 					<li> <a href="recordings.html">Recordings</a></li>
 					<li> <a href="other.html">Other Notes</a></li>
 					<li> <a href="staff.html">Staff</a></li>
@@ -32,13 +32,18 @@
 				<div id="donate_info">Your donations support the creation of new works and the many interactive and educational opportunities that enhance your performance experience. Your investment in the San José Chamber Orchestra supports a culture of exploration and risk taking by providing high-quality programs that foster inspired programming.
 				</div>
 				<div id="donate_links">
-					Friend: Gifts under $150 <a href="http://www.sjcotickets.org/product.sc?productId=16">Donate Now!</a>
-					<br/>
-					Member: Gifts of $150+ <a href="http://www.sjcotickets.org/product.sc?productId=16">Donate Now!</a>
-					<br/>
-					Sponsor: Gifts of $300+ <a href="http://www.sjcotickets.org/product.sc?productId=16">Donate Now!</a>
-					<br/>
-					Patron: Gifts of $500+ <a href="http://www.sjcotickets.org/product.sc?productId=16">Donate Now!</a>
+					<a href="http://www.sjcotickets.org/product.sc?productId=16">
+						<div id="donate_friend-button" class="button">Friend: Gifts under $150 </div>
+					</a>
+					<a href="http://www.sjcotickets.org/product.sc?productId=16">
+						<div id="donate_member-button" class="button">Member: Gifts of $150+ </div>
+					</a>
+					 <a href="http://www.sjcotickets.org/product.sc?productId=16">
+						<div id="donate_sponsor-button" class="button">Sponsor: Gifts of $300+</div>
+					</a>
+					<a href="http://www.sjcotickets.org/product.sc?productId=16">
+						<div id="donate_patron-button" class="button">Patron: Gifts of $500+</div>
+					</a>
 				</div>
 			</div>
 

@@ -4,17 +4,28 @@
 }
 
 html {
-	background: #fff url(../images/orchestraback.jpg) repeat-x;
+	background: #fff url(images/orchestraback.jpg) repeat-x;
 }
 
 body {
-	font: 62.5%/1.5 Arial, Hevetica, sans-sarif;
+	font: 62.5%/1.5 'Junction', 'Hevetica', sans-sarif;
 }
 
 header {
 	height: 150px;
 	display: block;
 	background-color: black;
+}
+
+@font-face {
+	font-family: 'Junction';
+	src: url('fonts/Junction-webfont.eot');
+	src: url('fonts/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/Junction-webfont.woff') format('woff'),
+	     url('fonts/Junction-webfont.ttf') format('truetype'),
+	     url('fonts/Junction-webfont.svg#junctionregularRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 #wrapper {
@@ -77,7 +88,7 @@ header h1 a:hover {
 
 #nav li a {
 	padding: 10px;
-	margin-left: 6px;
+	margin-left: 2px;
 	color: white;
 	border-radius: 35px;
 	transition: background-color 0.1s, box-shadow 0.25s;
@@ -98,7 +109,7 @@ header h1 a:hover {
 
 }
 
-#nav #active a {
+#nav .active a {
 	background-color: #005ba5;
 	color: white;
 	text-decoration: none;
@@ -110,11 +121,10 @@ header h1 a:hover {
 	height: 144px;
 }
 
-#directorDescription {
+#header_director-description {
 	float: right;
 	text-align: right;
 	padding: 5px 10px 0 0;
-	font: 62.5%/1.5 Arial, Hevetica, sans-sarif;
 	font-size: 1.0em;
 	font-weight: bold;
 }
@@ -123,6 +133,13 @@ header h1 a:hover {
 	float: left;
 	padding: 10px;
 	font-size: 20px;
+}
+
+.selected
+{
+	background-color: #1284BA;
+	color: #FFF;
+	text-shadow:0px 0px 3px #000 !important;
 }
 
 #wrapper2 {
@@ -143,6 +160,7 @@ header h1 a:hover {
 	opacity: 0.8;
 	border: 10px solid #fff;
 	font-size: 100px;
+	font-family:'Arial';
 	text-align: center;
 	text-shadow: 1px 1px 1px #fff;
 	width: 150px;
@@ -181,6 +199,62 @@ header h1 a:hover {
   
 }
 
+.button
+{
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(top, #7db9e8 1%, #1e5799 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#7db9e8), color-stop(98%,#1e5799)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #7db9e8 1%,#1e5799 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #7db9e8 1%,#1e5799 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #7db9e8 1%,#1e5799 98%); /* IE10+ */
+	background: linear-gradient(to bottom, #7db9e8 1%,#1e5799 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	border: 1px solid black;
+	cursor:pointer;
+	margin-left: auto;
+	margin-right: auto;
+	font-size:25px;
+	width:150px;
+}
+
+.button:active
+{
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e5799 0%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1e5799 0%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+#other_newsletter-button
+{
+	width: 150px;
+	margin-top: 10px;
+}
+
+#about_season-button
+{
+	width: 200px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#donate_friend-button,
+#donate_member-button,
+#donate_sponsor-button,
+#donate_patron-button
+{
+	width:350px;
+	margin-bottom:15px;
+}
+
+
 #material {
 	list-style-type: none;	
 	padding: 0px 40px;
@@ -194,33 +268,38 @@ header h1 a:hover {
 
 .index_text-box
 {
-	background-color: rgba(220,220,255,0.8);
-	padding: 3px;
-	box-shadow: 0px 0px 8px 3px  #000;
+	background-color: rgba(220,220,255,0.9);
+	box-shadow: 0px 0px 10px 1px black;
 	text-align: justify;
-	font-size: 20px;
+	font-size: 23px;
 	text-shadow: 1px 1px 1px white;
-	width: 100%;
+	padding: 15px;
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	height: 200px;
 }
 
 .page-title
 {
 	background-color: black;
 	padding: 8px 0;
-	box-shadow: inset 0px 0px 10px 2px white;
 	text-align: center;
 	font-size: 30px;
 	text-shadow: 2px 2px 5px #005BA5;
 	width: 100%;
 	color: white;
 	font-weight: bold;
+	border-top: 1px solid #FFF;
 }
+
 /* ABOUT */
 #about_season-info p
 {
 	color: #000;
 	font-size: 20px;
 	text-align: center;
+	font-size:25px;
 }
 
 #about_season-info a
@@ -249,7 +328,6 @@ header h1 a:hover {
 .season_event
 {
 	border-bottom: 1px solid white;
-	background-color: silver;
 }
 
 .season_event-title
@@ -258,7 +336,6 @@ header h1 a:hover {
 	font-size: 35px;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #000;
-	box-shadow: inset 0px 0px 11px 4px #1284BA;
 }
 
 .season_event-link
@@ -285,14 +362,14 @@ header h1 a:hover {
 .season_event-description
 {
 	font-size: 20px;
-	background-color: #999;
+	background-color: #FFF;
 }
 
 /* EVENTS */
 #events_content
 {
-	background-image: url(../images/events.png);
-	height: 843px;
+	background-image: url(images/events.png);
+	height: 863px;
 	width: 712px;
 	margin: 25px;
 	left: 105px;
@@ -327,7 +404,7 @@ header h1 a:hover {
 .zebra-even
 {
 	background-color: #333;
-	color: silver;
+	color: white;
 }
 #tickets_info
 {
@@ -345,13 +422,10 @@ header h1 a:hover {
 
 #youth_content
 {
-	border: 2px solid #555;
 	border-radius: 5px;
-	width: 100%;
-	background: silver;
 	text-align: justify;
 	font-size: 20px;
-
+	padding:15px;
 }
 
 /* DONATE */
@@ -372,19 +446,29 @@ header h1 a:hover {
 .staff_name-link
 {
 	position: relative;
-	border: 1px solid white;
-	background-color: silver;
-	font-size: 20px;
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	margin-top:-1px;
+	font-size: 25px;
 	padding: 3px 0;
 	cursor: default;
 	width: 100%;
 	text-align: center;
+	text-shadow:0px 0px 3px #FFF;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #1e5799 0%, #7db9e8 62%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(62%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* IE10+ */
+	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
 }
 
 .staff_name-link:hover
 {
 	background-color: #1284BA;
 	color: #FFF;
+	text-shadow:0px 0px 3px #000;
 }
 
 #staff_name-link-container
@@ -393,10 +477,7 @@ header h1 a:hover {
 }
 .staff_member
 {
-	border: 2px solid #555;
-	border-radius: 5px;
 	width: 100%;
-	background: silver;
 }
 
 .staff_member-title
@@ -469,13 +550,89 @@ header h1 a:hover {
 
 .recordings_title
 {
-	color:#1284BA;
-	text-align:center;
-	font-size:30px;
+	position: relative;
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	margin-top:-1px;
+	font-size: 25px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+	text-shadow:0px 0px 3px #FFF;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #1e5799 0%, #7db9e8 62%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(62%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* IE10+ */
+	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
+}
+
+.recordings_title:hover
+{
+	background-color: #1284BA;
+	color: #FFF;
+	text-shadow:0px 0px 3px #000;
 }
 
 .recordings_image
 {
+	width:150px;
 	margin-left:auto;
 	margin-right:auto;
+	float:left;
+}
+
+.recordings_section
+{
+	clear:both;
+	display:none;
+	padding:10px;
+}
+
+.recordings_notes
+{
+	font-size: 20px;
+	text-align: justify;
+	position: relative;
+	bottom: 20px;
+	padding: 0 15px;
+}
+
+.recordings_sample1
+{
+	float:left;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.recordings_sample1_description
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+.recordings_sample2
+{
+	float:right;
+	margin-right: 100px;
+	margin-top: 30px;
+}
+
+.recordings_sample2_description
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+.also-available-text
+{
+	clear: both;
+	font-size: 25px;
+	position: relative;
+	width: 370px;
+	bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
 }

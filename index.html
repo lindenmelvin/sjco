@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title> SJCO - About </title>
-		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<link href="main.css" rel="stylesheet" type="text/css" />
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 	</head>
 	<body>
@@ -11,7 +11,7 @@
 
 			<header>
 				<h1 id="header-image"><a href="index.html"><img src="images/header.png"/></a><img id="director" src="images/director.png">
-				<p id="directorDescription">
+				<p id="header_director-description">
 					Barbara Day Turner<br>
 					<i>Music Director</i>
 				</p></h1>
@@ -19,7 +19,7 @@
 
 			<div id="navBox">
 				<ul id="nav">
-					<li id="active"><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="season.html">2012-2013</a></li>
 					<li><a href="events.html">Events</a></li>
@@ -34,23 +34,23 @@
 
 			<div id="indexContent" class="content">
 				<ul id="material">
-					<li id="item1">
+					<li id="sjco_s">
 						<a href="about.html" class="hover-highlight"> S </a>
 					</li>
 
-					<li id="item2">
+					<li id="sjco_j">
 						<a href="recordings.html" class="hover-highlight"> J </a>
 					</li>
 
-					<li id="item3">
+					<li id="sjco_c">
 						<a href="staff.html" class="hover-highlight"> C </a>
 					</li>
 
-					<li id="item4">
+					<li id="sjco_o">
 						<a href="other.html" class="hover-highlight"> O </a>
 					</li>
 					
-					<li id="item5"><img style="width:100%" src="images/header.png"/></li>
+					<li id="sjco_banner"><img style="width:100%" src="images/header.png"/></li>
 				</ul>
 
 				<div id="text">
@@ -85,69 +85,23 @@
 <script type="text/javascript">
 $(document).ready(function() {
 
-$("#header-image").hide();
-$("#director").hide();
-$("#directorDescription").hide();
-$("#item1").hide();
-$("#item2").hide();
-$("#item3").hide();
-$("#item4").hide();
-$("#item5").hide();
-
-	$("#item1").fadeIn('slow', function () {
-		$("#item2").fadeIn('slow', function () {
-			$("#item3").fadeIn('slow', function() {
-				$("#item4").fadeIn('slow', function() {
-					$("#item5").fadeIn('slow');
-					$("#header-image").fadeIn('slow');
-					$("#director").fadeIn('slow');
-					$("#directorDescription").fadeIn('slow');
-				});
-			});
-		});
-	});
-
 });
 
-$("#item1").mouseenter(function() {
-	$("#text0").hide();
-	$("#item5").hide();
-	$("#text1").fadeIn("fast");
-});
+$("#sjco_s").mouseenter(function() { $("#text1").fadeIn("fast"); });
 
-$("#item1").mouseout(function() {
-	$("#text1").hide();
-});
+$("#sjco_s").mouseout(function() { $("#text1").hide(); });
 
-$("#item2").mouseenter(function() {
-	$("#text0").hide();
-	$("#item5").hide();
-	$("#text2").fadeIn("fast");
-});
+$("#sjco_j").mouseenter(function() { $("#text2").fadeIn("fast"); });
 
-$("#item2").mouseout(function() {
-	$("#text2").hide();
-});
+$("#sjco_j").mouseout(function() { $("#text2").hide(); });
 
-$("#item3").mouseenter(function() {
-	$("#text0").hide();
-	$("#item5").hide();
-	$("#text3").fadeIn("fast");
-});
+$("#sjco_c").mouseenter(function() { $("#text3").fadeIn("fast"); });
 
-$("#item3").mouseout(function() {
-	$("#text3").hide();
-});
+$("#sjco_c").mouseout(function() { $("#text3").hide(); });
 
-$("#item4").mouseenter(function() {
-	$("#text0").hide();
-	$("#item5").hide();
-	$("#text4").fadeIn("fast");
-});
+$("#sjco_o").mouseenter(function() { $("#text4").fadeIn("fast"); });
 
-$("#item4").mouseout(function() {
-	$("#text4").hide();
-});
+$("#sjco_o").mouseout(function() { $("#text4").hide(); });
 
 </script>
 
