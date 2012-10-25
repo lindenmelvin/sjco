@@ -286,7 +286,7 @@ header h1 a:hover {
 	padding: 8px 0;
 	text-align: center;
 	font-size: 30px;
-	text-shadow: 2px 2px 5px #005BA5;
+	text-shadow: 2px 1px 0px #274257;
 	width: 100%;
 	color: white;
 	font-weight: bold;
@@ -320,23 +320,16 @@ header h1 a:hover {
 	font-size: 20px;
 }
 
-#about_ibm-thank-you
+.about_thank-you
 {
-	float:left;
-	font-size:25px;
-	text-align:center;
-}
-
-#about_outreach-council-thank-you
-{
-	float:right;
-	font-size:25px;
-	text-align:center;
-}
-
-#about_smule-thank-you
-{
-	clear:both;
+	font-size: 25px;
+	text-align: center;
+	background-color: #274257;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 5px;
 }
 
 /* SEASON */
@@ -352,10 +345,23 @@ header h1 a:hover {
 
 .season_event-title
 {
-	color: white;
-	font-size: 35px;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #000;
+	position: relative;
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	margin-top:-1px;
+	font-size: 25px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+	text-shadow:0px 0px 3px #FFF;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #1e5799 0%, #7db9e8 62%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(62%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* IE10+ */
+	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
 }
 
 .season_event-link
@@ -435,6 +441,7 @@ header h1 a:hover {
 #tickets_button
 {
 	width:250px;
+	height: 33px;
 }
 
 /* YOUTH */
@@ -566,6 +573,7 @@ header h1 a:hover {
 {
 	text-align:center;
 	font-size:20px;
+	padding:5px;
 }
 
 .recordings_title
