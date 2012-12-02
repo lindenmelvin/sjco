@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<title> SJCO - About </title>
 		<link href="main.css" rel="stylesheet" type="text/css" />
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jquery.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -34,23 +34,23 @@
 
 			<div id="indexContent" class="content">
 				<ul id="material">
-					<li id="sjco_s">
+					<li id="sjco_s" style="display:none;">
 						<a href="about.html" class="hover-highlight"> S </a>
 					</li>
 
-					<li id="sjco_j">
+					<li id="sjco_j" style="display:none;">
 						<a href="recordings.html" class="hover-highlight"> J </a>
 					</li>
 
-					<li id="sjco_c">
+					<li id="sjco_c" style="display:none;">
 						<a href="staff.html" class="hover-highlight"> C </a>
 					</li>
 
-					<li id="sjco_o">
+					<li id="sjco_o" style="display:none;">
 						<a href="other.html" class="hover-highlight"> O </a>
 					</li>
 					
-					<li id="sjco_banner"><img style="width:100%" src="images/header.png"/></li>
+					<li id="sjco_banner" style="display:none;"><img style="width:100%" src="images/header.png"/></li>
 				</ul>
 
 				<div id="text">
@@ -83,6 +83,24 @@
 		</div>
         
 <script type="text/javascript">
+
+$('#header-image').hide();
+$('#header_director-description').hide();
+
+$(document).ready(function() {
+	$("#sjco_s").fadeIn('slow', function() {
+		$("#sjco_j").fadeIn('slow', function() {
+			$("#sjco_c").fadeIn('slow', function() {
+				$("#sjco_o").fadeIn('slow', function() {
+					$("#sjco_j").fadeIn('slow');
+					$('#header-image').fadeIn('slow');
+					$('#header_director-description').fadeIn('slow');
+					$('#sjco_banner').fadeIn('slow');
+				})
+			})
+		})
+	})
+});
 
 $("#sjco_s").mouseenter(function() { $("#text1").fadeIn("fast"); });
 
