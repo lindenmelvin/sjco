@@ -232,12 +232,6 @@ header h1 a:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
-#other_newsletter-button
-{
-	width: 150px;
-	margin-top: 10px;
-}
-
 #about_season-button
 {
 	width: 200px;
@@ -262,6 +256,22 @@ header h1 a:hover {
 
 #indexContent {
 	height: 500px;
+}
+
+.index_newsletter {
+  position:absolute;
+  bottom:0;
+}
+
+#index_newsletter-content {
+	font-size:20px;
+	padding:15px;
+}
+
+#index_newsletter-button
+{
+	width: 150px;
+	margin-top: 10px;
 }
 
 /* HOME */
@@ -385,20 +395,26 @@ header h1 a:hover {
 	color: #FFF;
 }
 
-.season_event-description
-{
+.season_event-description {
 	font-size: 20px;
 	background-color: #FFF;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.season_event-description.left {
+  width:49%;
+}
+
+.season_event-description.right {
+  width:49%;
 }
 
 /* EVENTS */
-#events_content
-{
-	
-	height: 863px;
-	width: 712px;
-	margin: 25px;
-	left: 105px;
+#events_content {
+	height: 1050px;
+	width: 750px;
+	margin: 25px auto;
 	position: relative;
 }
 
@@ -537,6 +553,20 @@ header h1 a:hover {
 	font-size: 15px;
 }
 
+
+.other_samuel-thompson-description {
+  width:38%;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.other_samuel-thompson-picture {
+  background-image: url("images/samuel_thompson.jpg");
+  height:154px;
+  width:226px;
+  display:inline-block;
+}
+
 .other_note-link
 {
 	position: relative;
@@ -559,12 +589,6 @@ header h1 a:hover {
 {
 	padding:20px;
 	font-size:15px;
-}
-
-#other_newsletter-content
-{
-	font-size:20px;
-	padding:15px;
 }
 
 /* RECORDINGS */
