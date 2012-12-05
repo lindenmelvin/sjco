@@ -343,18 +343,15 @@ header h1 a:hover {
 }
 
 /* SEASON */
-#season_content
-{
+#season_content {
 	text-align: center;
 }
 
-.season_event
-{
+.season_event {
 	border-bottom: 1px solid white;
 }
 
-.season_event-title
-{
+.season_event-link {
 	position: relative;
 	border-bottom:1px solid #000;
 	border-top:1px solid #000;
@@ -373,26 +370,10 @@ header h1 a:hover {
 	background: -ms-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* IE10+ */
 	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
 }
-
-.season_event-link
-{
-	position: relative;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-	background-color: silver;
-	font-size: 20px;
-	padding: 3px 0;
-	cursor: default;
-	width: 100%;
-	text-align: center;
-	background-color: #000;
-	color: white;
-}
-
-.season_event-link:hover
-{
+.season_event-link:hover {
 	background-color: #1284BA;
 	color: #FFF;
+	text-shadow:0px 0px 3px #000;
 }
 
 .season_event-description {
@@ -470,6 +451,47 @@ header h1 a:hover {
 	padding:15px;
 }
 
+.youth_link {
+	position: relative;
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	margin-top:-1px;
+	font-size: 25px;
+	padding: 3px 0;
+	cursor: default;
+	width: 100%;
+	text-align: center;
+	text-shadow:0px 0px 3px #FFF;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #1e5799 0%, #7db9e8 62%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(62%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* IE10+ */
+	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
+}
+
+.youth_link:hover {
+	background-color: #1284BA;
+	color: #FFF;
+	text-shadow:0px 0px 3px #000;
+}
+
+.youth_info {
+	text-align: justify;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.youth_picture {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.youth_santa-cruz-link {
+  text-align:center;
+  
+}
 /* DONATE */
 #donate_info
 {
@@ -517,21 +539,18 @@ header h1 a:hover {
 {
 	position: relative;
 }
-.staff_member
-{
+.staff_member {
 	border:1px solid #000;
 	margin-top:-1px;
 }
 
-.staff_member-title
-{
+.staff_member-title {
 	text-align: center;
 	color: #1284BA;
 	font-size: 25px;
 }
 
-.staff_member-bio
-{
+.staff_member-bio {
 	text-align: justify;
 	font-size: 20px;
 	padding: 10px;
@@ -621,8 +640,7 @@ header h1 a:hover {
 	background: linear-gradient(45deg, #1e5799 0%,#7db9e8 62%); /* W3C */
 }
 
-.recordings_title:hover
-{
+.recordings_title:hover {
 	background-color: #1284BA;
 	color: #FFF;
 	text-shadow:0px 0px 3px #000;
