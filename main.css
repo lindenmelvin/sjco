@@ -83,12 +83,13 @@ header h1 a:hover {
 #nav li {
 	float: left;
 	display: inline;
-	font-size: 2em;
+	font-size: 16px;
+	font-weight:bold;
+	margin-top:5px;
 }
 
 #nav li a {
 	padding: 10px;
-	margin-left: 2px;
 	color: white;
 	border-radius: 35px;
 	transition: background-color 0.1s, box-shadow 0.25s;
@@ -251,7 +252,7 @@ header h1 a:hover {
 
 #material {
 	list-style-type: none;	
-	padding: 0px 40px;
+	padding: 0px 35px;
 }
 
 #indexContent {
@@ -274,24 +275,25 @@ header h1 a:hover {
 	margin-top: 10px;
 }
 
+.sjco_image {
+  float:left;
+}
 /* HOME */
 
-.index_text-box
-{
+.index_text-box {
 	background-color: rgba(220,220,255,0.9);
 	box-shadow: 0px 0px 10px 1px black;
 	text-align: justify;
-	font-size: 23px;
-	text-shadow: 1px 1px 1px white;
-	padding: 15px;
-	position: absolute;
-	top: 200px;
-	left: 0px;
-	height: 200px;
+  font-size: 19px;
+  text-shadow: 1px 1px 1px white;
+  padding: 10px;
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  height: 50px;
 }
 
-.page-title
-{
+.page-title {
 	background-color: black;
 	padding: 8px 0;
 	text-align: center;
@@ -301,37 +303,33 @@ header h1 a:hover {
 	color: white;
 	font-weight: bold;
 	border-top: 1px solid #FFF;
+	border-bottom: 2px solid #FFF;
 }
 
 /* ABOUT */
-#about_season-info p
-{
+#about_season-info p {
 	color: #000;
 	font-size: 20px;
 	text-align: center;
 	font-size:25px;
 }
 
-#about_season-info a
-{
+#about_season-info a {
 	color: #005BA5;
 	font-weight: bold;
 }
 
-#about_choose-life
-{
+#about_choose-life {
 	font-size:20px;
 	padding:8px;
 	text-align:justify;
 }
 
-#about_thank-you
-{
-	font-size: 20px;
+#about_thank-you { 
+  font-size: 20px; 
 }
 
-.about_thank-you
-{
+.about_thank-you {
 	font-size: 25px;
 	text-align: center;
 	background-color: #274257;
@@ -556,12 +554,32 @@ header h1 a:hover {
 	padding: 10px;
 }
 
-.staff_member-picture
-{
+.staff_member-picture {
 	height: 137px;
 	width: 140px;
 	margin-left:auto;
 	margin-right: auto;
+}
+
+.composer {
+  font-size: 20px;
+  background-color: white;
+  padding: 5px 200px;
+  text-align:center;
+  border-bottom:1px solid #333;
+}
+
+.composer .left {
+  width:38%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.composer .right {
+  width: 61%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 25px;
 }
 
 /* OTHER */
