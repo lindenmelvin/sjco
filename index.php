@@ -10,7 +10,7 @@
 		<div id="wrapper">
 
 			<header>
-				<h1 id="header-image"><a href="index.html"><img src="images/header.png"/></a><img id="director" src="images/director.png">
+				<h1 id="header-image"><a href="index.php"><img src="images/header.png"/></a><img id="director" src="images/director.png">
 				<p id="header_director-description">
 					Barbara Day Turner<br>
 					<i>Music Director</i>
@@ -19,7 +19,7 @@
 
 			<div id="navBox">
 				<ul id="nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="season.html">2012-2013</a></li>
 					<li><a href="events.html">Events</a></li>
